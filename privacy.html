@@ -34,7 +34,7 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <div class="updated">Last updated: April 30, 2026</div>
+  <div class="updated">Last updated: June 19, 2026</div>
 
   <p>Wagly ("we", "us", "the app") is operated by Vinayak Bibekar (sole proprietor, based in India). This page explains what we collect, why, who we share it with, and your rights.</p>
   <p>By using Wagly you agree to this policy. If you don't agree, please don't use the app.</p>
@@ -44,7 +44,8 @@
   <ul>
     <li><strong>Account</strong> — email, hashed password (never plaintext), display name (if you provide one), Supabase user id. If you sign in with Google, Google additionally shares your name and profile picture URL with us.</li>
     <li><strong>Dog profiles</strong> — name, breed, birthday, gotcha day, weight, sex, microchip id, photo (if you upload one), notes.</li>
-    <li><strong>Walks</strong> — GPS route polyline, start/end timestamps, distance, duration, weather notes, poop/pee count, optional photos. <strong>Location is recorded only while you actively press "Start walk."</strong> It is not collected in the background.</li>
+    <li><strong>Walks</strong> — GPS route polyline, start/end timestamps, distance, duration, step count, weather notes, poop/pee count, optional photos. <strong>Location is recorded only during an active walk</strong> — from when you press "Start walk" until you stop it. So the full route is captured, recording continues when the app is in the background or your screen is off, and a persistent notification is shown the whole time a walk is being tracked. Location is never collected outside an active walk.</li>
+    <li><strong>Activity</strong> — while a walk is active, we count your steps using your device's motion/activity sensor to show how far you and your dog went. Step counts are stored with that walk.</li>
     <li><strong>Care &amp; health logs</strong> (only what you choose to log) — reminders, vaccinations, medications, vet appointments, weight entries, feeding schedules, bathroom log, training progress, photos of vaccination cards, prescriptions and vet reports.</li>
     <li><strong>Device &amp; app data</strong> — app version, OS version, device model, Expo push token, anonymous session id.</li>
     <li><strong>Usage events</strong> — which screens you open, when you start/finish a walk, when you complete onboarding, which features you tap "Notify me" on. No personal content is stored in event data.</li>
@@ -62,12 +63,13 @@
   <h2>Permissions and why we ask</h2>
   <table>
     <tr><th>Permission</th><th>Used for</th><th>Optional?</th></tr>
-    <tr><td>Location (foreground)</td><td>GPS tracking during a walk</td><td>Yes — walks won't track without it</td></tr>
+    <tr><td>Location (foreground &amp; background)</td><td>GPS tracking during a walk, including when the app is backgrounded or the screen is off, so the full route is captured. A persistent notification is shown while tracking.</td><td>Yes — walks won't track without it</td></tr>
+    <tr><td>Physical activity</td><td>Counting your steps during a walk</td><td>Yes</td></tr>
     <tr><td>Camera</td><td>Scanning vaccination cards, prescriptions, vet reports, taking dog photos</td><td>Yes</td></tr>
     <tr><td>Photos / media library</td><td>Picking dog photos and report photos from your gallery</td><td>Yes</td></tr>
     <tr><td>Notifications</td><td>Vaccine, flea-tick and reminder pings</td><td>Yes</td></tr>
   </table>
-  <p>We never request location in the background or while the app is closed.</p>
+  <p>Location is only ever collected during a walk you actively start, never outside one. Background access exists solely so a walk keeps recording when your screen is off.</p>
 
   <h2>How we use the data</h2>
   <ul>
