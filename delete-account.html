@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Wagly — Delete your account</title>
+<style>
+  :root { --bg: #FBF6EE; --card: #fff; --ink: #2A2118; --muted: #675A47; --subtle: #9A8A6F; --tint: #E8833A; --tint-deep: #C26A25; --border: #E5DDC9; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.65; font-size: 16px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+  .logo { font-size: 26px; font-weight: 900; color: var(--tint); font-style: italic; letter-spacing: -1px; }
+  .back { color: var(--muted); text-decoration: none; font-size: 14px; }
+  h1 { font-size: 32px; letter-spacing: -0.6px; margin: 0 0 4px; }
+  .updated { color: var(--subtle); font-size: 13px; margin-bottom: 28px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; letter-spacing: -0.2px; }
+  h3 { font-size: 16px; margin: 20px 0 6px; }
+  p, ul, ol { margin: 8px 0; color: var(--ink); }
+  ul, ol { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--tint-deep); }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  th { background: rgba(232,131,58,0.08); font-weight: 700; }
+  strong { color: var(--ink); }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
+  footer { color: var(--subtle); font-size: 13px; text-align: center; margin-top: 48px; }
+  .contact { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; }
+  .step { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; margin: 10px 0; }
+  .email { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: rgba(232,131,58,0.08); padding: 2px 8px; border-radius: 6px; }
+</style>
+</head>
+<body>
+  <header>
+    <a class="back" href="/">← Wagly</a>
+  </header>
+
+  <h1>Delete your account</h1>
+  <div class="updated">Last updated: May 1, 2026</div>
+
+  <p>This page explains how to permanently delete your <strong>Wagly</strong> account and the data associated with it. Wagly is operated by Vinayak Bibekar (sole proprietor, India).</p>
+
+  <h2>Option 1 — Delete from inside the app (fastest)</h2>
+  <div class="step">
+    <ol>
+      <li>Open Wagly on your phone.</li>
+      <li>Tap the <strong>Profile</strong> tab (bottom right).</li>
+      <li>Tap <strong>Settings</strong>.</li>
+      <li>Scroll down and tap <strong>Delete account</strong>.</li>
+      <li>Confirm. Your account and all associated data are removed immediately.</li>
+    </ol>
+  </div>
+
+  <h2>Option 2 — Email request (if you've uninstalled the app)</h2>
+  <p>If you no longer have the app installed, send an email to <span class="email">vinayakbibekar2@gmail.com</span> with:</p>
+  <ul>
+    <li>Subject: <strong>Delete my Wagly account</strong></li>
+    <li>The email address you used to sign up.</li>
+  </ul>
+  <p>We'll verify the request and delete your account within <strong>7 business days</strong>. We'll email you back to confirm.</p>
+
+  <h2>What gets deleted</h2>
+  <p>When you delete your account, the following are <strong>permanently removed</strong>:</p>
+  <ul>
+    <li>Your profile (email, name, photo, Supabase user record).</li>
+    <li>All dog profiles you created.</li>
+    <li>All walks (GPS routes, timestamps, photos).</li>
+    <li>All care &amp; health records (vaccinations, vet visits, medications, weight, feeding, reminders).</li>
+    <li>All memory book photos and milestones.</li>
+    <li>All photos uploaded to Wagly storage.</li>
+    <li>All push notification tokens.</li>
+    <li>All usage analytics tied to your account.</li>
+  </ul>
+
+  <h2>What may be retained</h2>
+  <ul>
+    <li><strong>Anonymised crash logs and aggregate analytics</strong> — these contain no personal identifiers and are kept for up to 90 days for debugging purposes.</li>
+    <li><strong>Backup copies on Supabase infrastructure</strong> — automated database backups are purged on Supabase's standard 7-day rotation.</li>
+    <li><strong>Records we are legally required to keep</strong> — for example, if there is an active legal claim or law-enforcement request. This is rare and only applies if we are notified of one.</li>
+  </ul>
+  <p>After the rotation/retention windows above, no copy of your data remains on Wagly's systems.</p>
+
+  <h2>Need help?</h2>
+  <div class="contact">
+    <p style="margin:0">Questions about deletion or your data: <span class="email">vinayakbibekar2@gmail.com</span></p>
+  </div>
+
+  <p style="margin-top:24px"><a href="/privacy">Read the full Privacy Policy →</a></p>
+
+  <footer>© Wagly · Vinayak Bibekar · India</footer>
+</body>
+</html>

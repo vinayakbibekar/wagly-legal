@@ -3,7 +3,8 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
-    { "source": "/terms.html", "destination": "/terms", "permanent": true }
+    { "source": "/terms.html", "destination": "/terms", "permanent": true },
+    { "source": "/delete-account.html", "destination": "/delete-account", "permanent": true }
   ],
   "headers": [
     {
